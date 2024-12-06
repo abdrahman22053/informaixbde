@@ -1,0 +1,35 @@
+<footer class="section-p1 flex flex-wrap justify-between !pb-1">
+  <div class="col">
+    <img src="../../../assets/img/logo.png" class="mb-8" alt="logo" height="80px" width="100px">
+    <h4>Contact</h4>
+    <p class="text-sm mb-2" *ngFor="let detail of details; let i = index">
+      <strong>{{detail.head}}</strong>{{detail.date}}
+    </p>
+    <div class="mt-5">
+      <h4>Suivez-nous</h4>
+      <div class="f-icon">
+        <i *ngFor="let icon of icons; let i = index"
+          class="{{icon.cls}} text-iconClr hover:text-primary pr-1 cursor-pointer"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <h4>À propos</h4>
+    <a href="#">À propos de nous</a>
+    <a href="#">Informations de livraison</a>
+    <a href="#">Termes et Conditions</a>
+    <a href="#">Contactez-nous</a>
+  </div>
+
+  <div class="col">
+    <h4>Mon compte</h4>
+    <a href="#">Se connecter</a>
+    <a href="#">Voir le panier</a>
+    <a href="#">Ma liste de souhaits</a>
+    <a href="#">Suivre ma commande</a>
+    <a href="#">Aide</a>
+  </div>
+
+
+</footer>

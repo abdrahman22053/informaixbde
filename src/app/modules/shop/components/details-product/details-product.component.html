@@ -1,0 +1,29 @@
+<!-- Details Product -->
+<section id="prodetails" class="section-p1 flex sm:flex-col md:flex-row mt-3 lg:items-start sm:items-center">
+  <div class="md:w-[40%] sm:w-[100%] md:mr-12 sm:mr-0">
+    <img src="{{imgSrc}}" width="100%" #mainImg alt="">
+    <div class="flex justify-between mt-1">
+      <div class="basis-[24%] cursor-pointer" *ngFor="let proImg of proImgs; let i = index">
+        <img src="{{proImg.img}}" width="100%" alt="" (click)="chooseImg(proImg.img)">
+      </div>
+    </div>
+  </div>
+  <div class="mt-6 md:w-1/2 sm:w-full">
+    <h6 class="font-bold p-0">Home / T-Shirt</h6>
+    <h4 class="px-0 pt-8 pb-4 font-bold">{{titleProd}}</h4>
+    <h2 class="text-26-px">{{priceProd}}</h2>
+    <select class="block text-sm py-[5px] px-[10px] mb-[10px] border focus:outline-primary">
+      <option>Sélectionnez la taille</option>
+      <option>XL</option>
+      <option>XXL</option>
+      <option>Small</option>
+      <option>Large</option>
+    </select>
+    <input (change)="valChange($event)" type="number" value="{{valInput}}"
+      class="w-[50px] h-12 border pl-3 mr-3 text-base focus:outline-primary">
+    <button class="normal !text-white !bg-primary" (click)="addCart($event)">Ajouter au panier</button>
+    <h4 class="font-bold px-0 pt-7 pb-4">Détails du produit</h4>
+    <span class="leading-6">TLe t-shirt Gildan Ultra Cotton est fabriqué à partir d'un tissu robuste de 6,0 oz/yd².
+      Construit à partir de 100 % de coton, ce jersey côtelé pré-rétréci à coupe classique offre un confort inégalé à chaque port. Doté d'un col et d'épaules renforcés, ainsi que d'un col double aiguille sans couture, et disponible dans une gamme de couleurs, il offre tout cela dans un ensemble ultra-attrayant.</span>
+  </div>
+</section>
