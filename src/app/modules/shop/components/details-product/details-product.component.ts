@@ -80,4 +80,23 @@ export class DetailsProductComponent{
     },
   ]
 
+  proImgs_pantalons: any[] = [
+    {
+      // img: '../../../../assets/img/products/f1.jpg',
+      img: 'https://i.ibb.co/SKzVh91/f7.jpg',
+    },
+    {
+      // img: '../../../../assets/img/products/f2.jpg',
+      img: 'https://i.ibb.co/ZKBbCDw/n6.jpg',
+    },
+    {
+      // img: '../../../../assets/img/products/f1.jpg',
+      img: 'https://i.ibb.co/SKzVh91/f7.jpg',
+    },
+    {
+      // img: '../../../../assets/img/products/f2.jpg',
+      img: 'https://i.ibb.co/ZKBbCDw/n6.jpg',
+    },
+  ]
+
 }
